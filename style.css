@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(135deg, #b357d8, #851dda);
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kapsayici {
+    background: white;
+    width: 90%;
+    max-width: 450px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.giris-alani {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+}
+
+button {
+    padding: 15px 25px;
+    border: none;
+    background: #8510b3;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Görev tamamlandığında eklenecek sınıf */
+.yapildi {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+ul li span {
+    color: #eef113;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #df94c8;
+}
